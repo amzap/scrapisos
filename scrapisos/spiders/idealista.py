@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
+from scrapisos.items import ScrapisosItem
 
 class IdealistaSpider(scrapy.Spider):
     name = 'idealista'

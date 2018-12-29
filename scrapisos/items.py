@@ -9,6 +9,18 @@ import scrapy
 
 
 class ScrapisosItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    link = scrapy.Field()
+    price = scrapy.Field()
+    rooms = scrapy.Field()
+    m2 = scrapy.Field()
+    planta = scrapy.Field()
+    ascensor = scrapy.Field()
+    comentarios = scrapy.Field()
+
+class SellItem(IdealistaItem):
+    drop_price = scrapy.Field()
+    price_per_m2 = scrapy.Field()
+
+class RentItem(IdealistaItem):
+    rent = scrapy.Field()

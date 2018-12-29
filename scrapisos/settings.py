@@ -17,10 +17,14 @@ NEWSPIDER_MODULE = 'scrapisos.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapisos (+http://www.yourdomain.com)'
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+FEED_EXPORTERS = {
+        'csv': 'idealista.csv_exporter.MyCsvItemExporter',
+        }
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

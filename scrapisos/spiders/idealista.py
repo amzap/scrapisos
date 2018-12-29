@@ -41,7 +41,7 @@ class IdealistaSpider(scrapy.Spider):
             ascensor_s = flat.xpath('span[@class="item-detail"]/small[starts-with(text(),"planta")]/text()').extract_first()
             ascensor = 1 if ascensor_s and "con ascensor" in ascensor_s else 0
 
-            flat_item = IdealistaItem(
+            flat_item = ScrapisosItem(
                 title=title,
                 link=link,
                 price=price,

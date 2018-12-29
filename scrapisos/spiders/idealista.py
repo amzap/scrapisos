@@ -8,7 +8,7 @@ class IdealistaSpider(scrapy.Spider):
     allowed_domains = ['www.idealista.com']
 
     def __init__(self, search='', **kwargs):
-        self.start_urls = ['http://www.example.com/{search}']
+        self.start_urls = ['http://www.idealista.com/{}'.format(search)]
         super().__init__(**kwargs)
 
 
